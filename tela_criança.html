@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="tela_criança.css" />
+</head>
+
+<body>
+    <div id="background_gradient"></div>
+    <header id="topo"><button class="btn_menu_topo" id="btn_inicio"><i class="fa-solid fa-house-user"></i><span
+                class="texto_menu_topo"> Início</span></button><button class="btn_menu_topo" id="btn_sobre"><i
+                class="fa-solid fa-circle-question"></i><span class="texto_menu_topo"> Sobre</span></button><button
+            class="btn_menu_topo" id="btn_sair"><i class="fa-solid fa-arrow-right-from-bracket"></i><span
+                class="texto_menu_topo"> Sair</span></button></header>
+    <div id="questionarios" class="container">
+        <span id="q1" class="questionario disponivel">
+            <h1 id="titulo_q1">Q1 - crianças de até 4 meses</h1>
+            <i class="fa-solid fa-circle-check icone"></i>
+            <span class="links">
+                <p>Questionário respondido.</p>
+                <div class="botoes-paragrafo"><button id="q1_responder" style="display: none;">Responder</button><button id="q1_novaResposta">Nova resposta</button><button id="q1_resultado">Conferir resultado</button></div>
+            </span>
+        </span>
+        <span id="q2" class="questionario disponivel">
+            <h1 id="titulo_q2">Q2 - crianças de até 9 meses</h1>
+            <i class="fa-solid fa-lock-open icone"></i>
+            <span class="links">
+                <p class="card-paragrafo">Questionário disponível.</p>
+                <div class="botoes-paragrafo"><button id="q2_responder">Responder</button><button id="q2_novaResposta" style="display: none;">Nova resposta</button><button id="q2_resultado" style="display: none;">Conferir resultado</button></div>
+            </span>
+        </span>
+        <span id="q3" class="questionario disponivel">
+            <h1 id="titulo_q3">Q3 - crianças de até 15 meses</h1>
+            <i class="fa-solid fa-lock-open icone"></i>
+            <span class="links">
+                <p class="card-paragrafo">Questionário disponível.</p>
+                <div class="botoes-paragrafo"><button id="q3_responder">Responder</button><button id="q3_novaResposta" style="display: none;">Nova resposta</button><button id="q3_resultado" style="display: none;">Conferir resultado</button></div>
+            </span>
+        </span>
+        <span id="q4" class="questionario disponivel">
+            <h1 id="titulo_q4">Q4 - crianças de até 2 anos</h1>
+            <i class="fa-solid fa-lock-open icone"></i>
+            <span class="links">
+                <p class="card-paragrafo">Questionário disponível.</p>
+                <div class="botoes-paragrafo"><button id="q4_responder">Responder</button><button id="q4_novaResposta" style="display: none;">Nova resposta</button><button id="q4_resultado" style="display: none;">Conferir resultado</button></div>
+            </span>
+        </span>
+        <span id="q5" class="questionario disponivel">
+            <h1 id="titulo_q5">Q5 - crianças de até 4 anos</h1>
+            <i class="fa-solid fa-lock-open icone"></i>
+            <span class="links">
+                <p class="card-paragrafo">Questionário disponível.</p>
+                <div class="botoes-paragrafo"><button id="q5_responder">Responder</button><button id="q5_novaResposta" style="display: none;">Nova resposta</button><button id="q5_resultado" style="display: none;">Conferir resultado</button></div>
+            </span>
+        </span>
+        <span id="q6" class="questionario indisponivel">
+            <h1 id="titulo_q6">Q6 - crianças de até 6 anos</h1>
+            <i class="fa-solid fa-lock icone"></i>
+            <span class="links">
+                <p class="card-paragrafo">Indisponível para crianças desta idade.</p>
+                <div class="botoes-paragrafo"><button>Espiar perguntas</button></div>
+            </span>
+        </span>
+    </div>
+<script type="text/javascript" src="tela_criança.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+:root {
+    --btn-cor1: rgba(104, 61, 26, 0.7);
+    --btn-cor2: rgba(242, 242, 242);
+}
+
+body {
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(80, 80, 80);
+    margin: 0px;
+}
+
+#background_gradient {
+
+    background-image: linear-gradient(to bottom right, #127CA6, #BCBF5E, #F2AFA0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.85;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+#topo {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+}
+
+.btn_menu_topo {
+    background: rgba(000, 000, 000, 0.5);
+    border-radius: 0;
+    height: 100%;
+}
+
+.btn_menu_topo:hover {
+    background: none;
+    color: rgba(000, 000, 000, 0.5);
+}
+
+#btn_sair {
+    float: right;
+}
+
+#container {
+    background-color: rgba(255, 255, 255, 0.5);
+    min-width: 450px;
+    max-width: 900px;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    top: 20px;
+    margin: auto;
+    font-size: 12pt;
+}
+
+p,
+form {
+    text-align: center;
+}
+
+input,
+label {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 20pt;
+    white-space: nowrap;
+}
+
+h2 {
+    font-size: 14pt;
+}
+
+#proxima_pergunta {
+    float: right;
+    margin-right: 10px;
+}
+
+.referencias {
+    border: 1px solid rgb(180, 180, 180);
+    border-radius: 4px;
+    text-align: justify;
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+    color: rgb(150, 150, 150);
+    font-size: 12px;
+}
+
+.referencias h3 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+button {
+    background-color: var(--btn-cor1);
+    border: none;
+    border-radius: 10px;
+    color: var(--btn-cor2);
+    height: 40px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--btn-cor2);
+    color: var(--btn-cor1);
+}
+
+@media only screen and (max-width: 600px) {
+    .texto_menu_topo {
+        display: none;
+    }
+
+    #container {
+        min-width: 225px;
+        max-width: 450px;
+        padding: 5px;
+    }
+  #proxima_pergunta {
+        margin-right: 5px;
+    }
+
+    .referencias {
+        border-radius: 2px;
+        padding: 5px;
+        color: rgb(70, 70, 70);
+    }
+
+
+    button {
+        border-radius: 5px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .texto_menu_topo {
+        display: none;
+    }
+
+    #container {
+        min-width: 300px;
+        max-width: 90%;
+        padding: 5px;
+        font-size: 8pt;
+    }
+
+    h1 {
+        font-size: 12pt;
+    }
+
+    h2 {
+        font-size: 9pt;
+    }
+
+    #proxima_pergunta {
+        margin-right: 5px;
+    }
+
+    .referencias {
+        border-radius: 2px;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .referencias h3 {
+        font-size: 11px;
+    }
+
+    button {
+        border-radius: 5px;
+        height: 20px;
+    }
+}

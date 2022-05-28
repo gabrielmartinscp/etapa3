@@ -1,0 +1,320 @@
+body {
+    background: linear-gradient(to bottom right, rgba(18, 124, 166, 0.85), rgba(188, 191, 95, 0.85), rgba(242, 175, 160, 0.85)),
+        url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(80, 80, 80);
+    margin: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@keyframes f1 {
+    from {
+        top: 20%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes f2 {
+    from {
+        top: 40%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes f2 {
+    from {
+        top: 60%;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+#corpo {
+    width: auto;
+    height: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.frase {
+    color: white;
+    font-size: 70pt;
+    font-style: bold;
+    white-space: nowrap;
+    opacity: 0;
+    margin-bottom: 5%;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+#frase1 {
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-name: f1;
+}
+
+#frase2 {
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-name: f1;
+}
+
+#frase3 {
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-name: f1;
+}
+
+@keyframes b {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#btn_corpo {
+    height: 120px;
+    width: 400px;
+    font-size: 20pt;
+    background: none;
+    border: 3px solid white;
+    color: white;
+    border-radius: 60px;
+    display: block;
+    margin: auto;
+    opacity: 0;
+    transition: background-color 2s, border 2s, color 2s;
+    animation-delay: 5.5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-name: b;
+}
+
+#btn_corpo:hover {
+    background-color: white;
+    border: 3px solid rgba(255, 255, 255, 0);
+    color: rgba(000, 000, 000, 0.5);
+}
+
+
+@media (max-width: 1500px) {
+
+    .frase {
+        font-size: 65pt;
+    }
+
+    #btn_corpo {
+        height: 115px;
+        width: 370px;
+        font-size: 19pt;
+        border-radius: 55px;
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .frase {
+        font-size: 60pt;
+    }
+
+    #btn_corpo {
+        height: 110px;
+        width: 360px;
+        font-size: 18pt;
+        border-radius: 55px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .frase {
+        font-size: 55pt;
+    }
+
+    #btn_corpo {
+        height: 105px;
+        width: 350px;
+        font-size: 18pt;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .frase {
+        font-size: 50pt;
+    }
+
+    #btn_corpo {
+        height: 100px;
+        width: 340px;
+        font-size: 17pt;
+        border-radius: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .frase {
+        font-size: 45pt;
+    }
+
+    #btn_corpo {
+        height: 95px;
+        width: 330px;
+        font-size: 17pt;
+        border-radius: 45px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .frase {
+        font-size: 40pt;
+    }
+
+    #btn_corpo {
+        height: 90px;
+        width: 320px;
+        font-size: 16pt;
+        border-radius: 45px;
+    }
+}
+@media (max-width: 800px) {
+
+    .frase {
+        font-size: 35pt;
+    }
+
+    #btn_corpo {
+        height: 85px;
+        width: 310px;
+        font-size: 16pt;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .frase {
+        font-size: 30pt;
+    }
+
+    #btn_corpo {
+        height: 80px;
+        width: 300px;
+        font-size: 15pt;
+        border-radius: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .frase {
+        font-size: 25pt;
+    }
+
+    #btn_corpo {
+        height: 75px;
+        width: 290px;
+        font-size: 15pt;
+        border-radius: 35px;
+    }
+}
+
+@media (max-height: 900px) {
+
+    .frase {
+        font-size: 40pt;
+        margin-bottom: 5%;
+    }
+
+    #btn_corpo {
+        height: 90px;
+        width: 320px;
+        font-size: 16pt;
+        border-radius: 45px;
+    }
+}
+@media (max-height: 800px) {
+
+    .frase {
+        font-size: 35pt;
+        margin-bottom: 4%;
+    }
+
+    #btn_corpo {
+        height: 85px;
+        width: 310px;
+        font-size: 16pt;
+        border-radius: 40px;
+    }
+}
+
+@media (max-height: 700px) {
+
+    .frase {
+        font-size: 30pt;
+        margin-bottom: 3%;
+    }
+
+    #btn_corpo {
+        height: 80px;
+        width: 300px;
+        font-size: 15pt;
+        border-radius: 40px;
+    }
+}
+
+@media (max-height: 600px) {
+
+    .frase {
+        font-size: 25pt;
+        margin-bottom: 2%;
+    }
+
+    #btn_corpo {
+        height: 75px;
+        width: 290px;
+        font-size: 15pt;
+        border-radius: 35px;
+    }
+}
+
+@media (max-height: 500px) {
+    .frase {
+        font-size: 20pt;
+        margin-bottom: 1%;
+    }
+
+    #btn_corpo {
+        height: 70px;
+        width: 270px;
+        font-size: 14pt;
+        border-radius: 30px;
+    }
+}

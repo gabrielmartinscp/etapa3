@@ -1,0 +1,249 @@
+:root
+{
+    --bg-painel: rgba(255, 255, 255, 0.5);
+    /*--bg-body: linear-gradient(to top right, #bdfffc, #ffe6f7, #ffc7bd);*/
+    /*--bg-body: linear-gradient(to bottom right, #bdfffc, #ffe6f7, #ffc7bd);*/
+    --bg-body: #D8F2EB;
+}
+
+html
+{
+    min-height: 100%;
+}
+
+body
+{
+    background: linear-gradient(to bottom right, rgba(18, 124, 166, 0.85), rgba(188, 191, 95, 0.85), rgba(242, 175, 160, 0.85)),
+    url("bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(80, 80, 80);
+    margin: 0px;
+}
+
+#topo
+{
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: block;
+}
+
+button
+{
+    cursor: pointer;
+}
+
+.btn_menu_topo
+{
+    border: none;
+    background-color: rgba(000, 000, 000, 0.5);
+    height: 100%;
+    transition: all 1s;
+    color: rgb(242, 242, 242);
+}
+
+.btn_menu_topo:hover
+{
+    background: none;
+    color: rgba(000, 000, 000, 0.5);
+}
+
+#btn_sair
+{
+    float: right;
+}
+
+#questionarios
+{
+    position: relative;
+    top: 100px;
+    margin: auto;
+    max-width: 1200px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.questionario
+{
+    display: inline-block;
+    background-color: var(--bg-painel);
+    height: 300px;
+    width: 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.questionario h1
+{
+    font-size: 16pt;
+    color: #969696;
+    width: 100%;
+    margin: auto;
+    padding-top: 15px;
+    border-bottom: 2px solid rgba(146, 146, 146, 0.2);
+    max-width: 270px;
+}
+
+.links
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.links span
+{
+    display: inline-block;
+    margin: auto;
+}
+
+.links p
+{
+    font-size: 12pt;
+}
+
+.links button
+{    
+    font-size: 16pt;
+    color: rgb(160, 160, 160);
+    border: 2px solid rgba(160, 160, 160, 0);
+    border-radius: 10px;
+    background: none;
+    margin-left: 3px;
+    transition: background-color 1s, border 1s, color 1s;
+}
+
+.links button:hover
+{
+    background-color: white;
+    border: 2px solid rgba(255, 255, 255, 0);
+    color: rgba(000, 000, 000, 0.5);
+}
+
+.questionario a
+{
+    text-decoration: none;
+    font-weight: bolder;
+    color:rgb(150, 150, 150);
+}
+
+.disponivel
+{
+    opacity: 1;
+}
+
+.indisponivel
+{
+    opacity: 0.5;
+}
+
+.icone
+{
+    color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    font-size: 90pt;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 500px) {
+    .texto_menu_topo {
+      display: none;
+    }
+}
+@media only screen and (max-width: 700px) {
+    #questionarios {
+        max-width: 450px;
+        white-space: initial;
+        top: 10px;
+        overflow-x: unset;
+        overflow-y: auto;
+        max-height: 80%;
+    }
+
+    .questionario
+    {
+        cursor: pointer;
+        display: inline-block;
+        background-color: var(--bg-painel);
+        height: 225px;
+        width: 262.5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 7.5px;
+        margin: 6.625px;
+    }
+    
+    .questionario h1
+    {
+        font-size: 10pt;
+        color: #969696;
+        padding-top: 11.25px;
+        border-bottom: 1px solid rgba(146, 146, 146, 0.2);
+        max-width: 202.5px;
+    }
+    .icone
+    {
+        font-size: 50pt;
+    }
+
+    .links span
+    {
+        font-size: 10pt;
+    }
+
+    .links button
+    {
+        font-size: 10pt;
+    }
+  }
+
+  
+@media only screen and (max-height: 500px) {
+    #questionarios {
+        top: 10px;
+        max-height: 80%;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .questionario
+    {
+        cursor: pointer;
+        display: inline-block;
+        background-color: var(--bg-painel);
+        height: 225px;
+        width: 262.5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 7.5px;
+        margin: 6.625px;
+    }
+    
+    .questionario h1
+    {
+        font-size: 10pt;
+        color: #969696;
+        padding-top: 11.25px;
+        border-bottom: 1px solid rgba(146, 146, 146, 0.2);
+        max-width: 202.5px;
+    }
+    
+    .icone
+    {
+        font-size: 50pt;
+    }
+
+    .links p
+    {
+        font-size: 10pt;
+    }
+
+    .links button
+    {
+        font-size: 10pt;
+    }
+  }

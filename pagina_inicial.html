@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template padrão</title>
+    <link rel="stylesheet" href="pagina_inicial.css">
+
+</head>
+
+<body>
+    <div id="corpo">
+        <div id="frase1" class="frase">Saúde da criança.</div>
+        <div id="frase2" class="frase">Desenvolvimento infantil.</div>
+        <div id="frase3" class="frase">Informe-se e acompanhe.</div>
+        <button id="btn_corpo">Acesse ou cadastre-se</button>
+    </div>
+
+    <script type="text/javascript">
+        let bg = document.body;
+        function ajustarBG() {
+            bg.style.height = "100vh";
+        }
+        ajustarBG();
+        window.addEventListener('resize', () => { ajustarBG(); });
+        </script>
+</body>
+
+</html>

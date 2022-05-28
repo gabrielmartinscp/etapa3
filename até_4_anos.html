@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Cresça</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="template_questionario.css">
+</head>
+
+<body>
+    <header id="topo">
+        <button class="btn_menu_topo" id="btn_inicio"><i class="fa-solid fa-house-user"></i><span
+                class="texto_menu_topo"> Início</span></button><button class="btn_menu_topo" id="btn_sobre"><i
+                class="fa-solid fa-circle-question"></i><span class="texto_menu_topo"> Sobre</span></button><button
+            class="btn_menu_topo" id="btn_sair"><i class="fa-solid fa-arrow-right-from-bracket"></i><span
+                class="texto_menu_topo"> Sair</span></button>
+    </header>
+    <div id="background_gradient"></div>
+    <div id="container">
+
+        <h1> Nome - idade </h1>
+        <h2> Questionário 5 - crianças até 4 anos </h2>
+        <div id="contador"> (<span id="contador_pergunta_atual">1</span>/7) </div>
+
+        <div id="pergunta1">
+            <p class="texto_apoio">
+            </p>
+            <div class="referencias">
+                <h3>Referências:</h3>BRASIL. Ministério da Saúde. Saúde da Criança - Acompanhamento do crescimento e
+                desenvolvimento infantil. Brasília: 2002.
+            </div>
+            <p>O nível de amizade na escolinha do(a)<span class="nome_crianca"> Nome </span> e agradável?</p>
+            <form>
+                <input type="radio" name="pergunta" class="sim" id="sim_p1" />
+                <label for="sim_p1">Sim</label>
+                <input type="radio" name="pergunta" class="nao" id="nao_p1" />
+                <label for="nao_p1">Não</label>
+                <input type="radio" name="pergunta" class="nao_sei" id="nao_sei_p1" />
+                <label for="nao_sei_p1">Não sei responder</label>
+            </form>
+        </div>
+
+        <div id="pergunta2" style="display: none;">
+            <p class="texto_apoio">
+            </p>
+            <div class="referencias">
+                <h3>Referências:</h3>BRASIL. Ministério da Saúde. Saúde da Criança - Acompanhamento do crescimento e
+                desenvolvimento infantil. Brasília: 2002.
+            </div>
+            <p><span class="nome_crianca"> Nome </span> já sabe o nome das coisas e seus pertences?</p>
+            <form>
+                <input type="radio" name="pergunta" class="sim" id="sim_p2" />
+                <label for="sim_p2">Sim</label>
+                <input type="radio" name="pergunta" class="nao" id="nao_p2" />
+                <label for="nao_p2">Não</label>
+                <input type="radio" name="pergunta" class="nao_sei" id="nao_sei_p2" />
+                <label for="nao_sei_p2">Não sei responder</label>
+            </form>
+        </div>
+
+        <div id="pergunta3" style="display: none;">
+            <p class="texto_apoio">
+            </p>
+            <div class="referencias">
+                <h3>Referências:</h3>BRASIL. Ministério da Saúde. Saúde da Criança - Acompanhamento do crescimento e
+                desenvolvimento infantil. Brasília: 2002.
+            </div>
+            <p>A mãe veste o(a)<span class="nome_crianca"> Nome </span> ou ele(a) se veste sozinho(a)?</p>
+            <form>
+                <input type="radio" name="pergunta" class="sim" id="sim_p3" />
+                <label for="sim_p3">Sim</label>
+                <input type="radio" name="pergunta" class="nao" id="nao_p3" />
+                <label for="nao_p3">Não</label>
+                <input type="radio" name="pergunta" class="nao_sei" id="nao_sei_p3" />
+                <label for="nao_sei_p3">Não sei responder</label>
+            </form>
+        </div>
+
+        <div id="pergunta4" style="display: none;">
+            <p class="texto_apoio">
+            </p>
+            <div class="referencias">
+                <h3>Referências:</h3>BRASIL. Ministério da Saúde. Saúde da Criança - Acompanhamento do crescimento e
+                desenvolvimento infantil. Brasília: 2002.
+            </div>
+            <p><span class="nome_crianca"> Nome </span> consegue se equilibrar momentaneamente usando apenas um de seus
+                pés?
+            </p>
+            <form>
+                <input type="radio" name="pergunta" class="sim" id="sim_p4" />
+                <label for="sim_p4">Sim</label>
+                <input type="radio" name="pergunta" class="nao" id="nao_p4" />
+                <label for="nao_p4">Não</label>
+                <input type="radio" name="pergunta" class="nao_sei" id="nao_sei_p4" />
+                <label for="nao_sei_p4">Não sei responder</label>
+            </form>
+        </div>
+
+        <div id="pergunta5" style="display: none;">
+            <p class="texto_apoio">
+            </p>
+            <div class="referencias">
+                <h3>Referências:</h3>BRASIL. Ministério da Saúde. Saúde da Criança - Acompanhamento do crescimento e
+                desenvolvimento infantil. Brasília: 2002.
+            </div>
+            <p><span class="nome_crianca"> Nome </span> compõe frases expressando emoções, situações ou desejos? </p>
+            <form>
+                <input type="radio" name="pergunta" class="sim" id="sim_p5" />
+                <label for="sim_p5">Sim</label>
+                <input type="radio" name="pergunta" class="nao" id="nao_p5" />
+                <label for="nao_p5">Não</label>
+                <input type="radio" name="pergunta" class="nao_sei" id="nao_sei_p5" />
+                <label for="nao_sei_p5">Não sei responder</label>
+            </form>
+        </div>
+
+        <div id="pergunta6" style="display: none;">
+            <p class="texto_apoio">
+            </p>
+            <div class="referencias">
+                <h3>Referências:</h3>BRASIL. Ministério da Saúde. Saúde da Criança - Acompanhamento do crescimento e
+                desenvolvimento infantil. Brasília: 2002.
+            </div>
+            <p><span class="nome_crianca"> Nome </span> consegue utilizar o vaso (ou penico) sem acompanhamento da mãe?
+            </p>
+            <form>
+                <input type="radio" name="pergunta" class="sim" id="sim_p6" />
+                <label for="sim_p6">Sim</label>
+                <input type="radio" name="pergunta" class="nao" id="nao_p6" />
+                <label for="nao_p6">Não</label>
+                <input type="radio" name="pergunta" class="nao_sei" id="nao_sei_p6" />
+                <label for="nao_sei_p6">Não sei responder</label>
+            </form>
+        </div>
+
+        <div id="pergunta7" style="display: none;">
+            <p class="texto_apoio">
+            </p>
+            <div class="referencias">
+                <h3>Referências:</h3>BRASIL. Ministério da Saúde. Saúde da Criança - Acompanhamento do crescimento e
+                desenvolvimento infantil. Brasília: 2002.
+            </div>
+            <p><span class="nome_crianca"> Nome </span> consegue diferenciar as cores? </p>
+            <form>
+                <input type="radio" name="pergunta" class="sim" id="sim_p7" />
+                <label for="sim_p7">Sim</label>
+                <input type="radio" name="pergunta" class="nao" id="nao_p7" />
+                <label for="nao_p7">Não</label>
+                <input type="radio" name="pergunta" class="nao_sei" id="nao_sei_p7" />
+                <label for="nao_sei_p7">Não sei responder</label>
+            </form>
+        </div>
+
+        <button id="pergunta_anterior"><i class="fa-solid fa-circle-left"></i> pergunta anterior</button>
+        <button id="proxima_pergunta">próxima pergunta <i class="fa-solid fa-circle-right"></i></button>
+    </div>
+    <footer id="rodape"></footer>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("background_gradient");
+        let rodape = document.getElementById("rodape");
+        function ajustarBG() {
+            bg.style.height = document.body.scrollHeight + "px";
+        }
+        ajustarBG();
+        window.addEventListener('resize', () => { ajustarBG(); });
+
+        let inicio = document.getElementById("btn_inicio");
+        inicio.addEventListener('click', () => { window.location = "/template_questionario.html#inicio"; });
+
+        let sobre = document.getElementById("btn_sobre");
+        sobre.addEventListener('click', () => { window.location = "/template_questionario.html#sobre"; });
+    </script>
+</body>
+
+</html>
